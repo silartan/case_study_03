@@ -57,7 +57,7 @@ Birim Başı Ortalama Fiyat = DIVIDE([Toplam Ciro EUR], SUM('Satış Verileri'[M
 
 * **Müşteri Başına Ortalama Ciro (€):**
 ```dax
-Müşteri Başına Ortalama Ciro = DIVIDE([Toplam Ciro EUR], DISTINCTCOUNT('Satış Verileri'[Müşteri]), 0)
+Müşteri Başına Ortalama Ciro = DIVIDE([Toplam Ciro EUR], [Toplam Müşteri], 0)
 ```
 
 ---
