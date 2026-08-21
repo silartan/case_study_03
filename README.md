@@ -66,12 +66,11 @@ Müşteri Başına Ortalama Ciro = DIVIDE([Toplam Ciro EUR], [Toplam Müşteri],
 
 * **Müşteri Sipariş Sıklığı Segmentasyonu:**
 ```dax
-Müşteri Satın Alma Sıklığı = 
-SWITCH(
+Müşteri Satın Alma Sıklığı = SWITCH(
     TRUE(),
-    'Satış Verileri'[Müşteri Toplam Sipariş] >= 200, "Çok Sık (Sadık)",
-    'Satış Verileri'[Müşteri Toplam Sipariş] >= 50, "Düzenli",
-    'Satış Verileri'[Müşteri Toplam Sipariş] >= 10, "Orta Sıklık",
+    'Satış Verileri'[Müşteri Toplam Sipariş] >= 50, "Çok Sık (Sadık)",
+    'Satış Verileri'[Müşteri Toplam Sipariş] >= 15, "Düzenli",
+    'Satış Verileri'[Müşteri Toplam Sipariş] >= 5,  "Orta Sıklık",
     "Seyrek / Yeni"
 )
 ```
