@@ -59,14 +59,13 @@ TRUE(),
 
  Klasör Yapısı:
 case_study_03/
-
-- data/          # Ham veri seti
+ data         # Ham veri seti
   
-- report/        # Power BI (.pbix) çalışma dosyası
+ report       # Power BI (.pbix) çalışma dosyası
   
--outputs/       # Dashboard ekran görüntüleri (.png)
+ outputs      # Dashboard ekran görüntüleri (.png)
 
--README.md      # Proje dokümantasyonu
+ README.md     # Proje dokümantasyonu
 
 🛠️ Kullanılan Teknolojiler
 BI & Görselleştirme: Microsoft Power BI Desktop
