@@ -80,10 +80,11 @@ SWITCH(
 ```dax
 Fiyat Skalası = 
 SWITCH(
-    TRUE(),
-    'Satış Verileri'[Birim Fiyat] >= 5.0, "Premium Segment",
-    'Satış Verileri'[Birim Fiyat] >= 3.5, "Orta Segment",
-    "Düşük Segment"
+   TRUE(),
+    'Satış Verileri'[Birim Fiyat] < 3, "Düşük Segment (<3€)",
+    'Satış Verileri'[Birim Fiyat] <= 6, "Orta Segment (3€ - 6€)",
+    'Satış Verileri'[Birim Fiyat] > 6, "Premium Segment (>6€)",
+    "Belirsiz"
 )
 ```
 
