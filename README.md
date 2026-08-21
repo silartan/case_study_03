@@ -102,7 +102,7 @@ case_study_03/
 
 ---
 
-## 🛠️ Kullanılan Teknolojiler
+##  Kullanılan Teknolojiler
 * **BI & Görselleştirme:** Microsoft Power BI Desktop
 * **Modelleme & Hesaplama:** DAX (Data Analysis Expressions), Power Query
 * **Veri Yönetimi:** Excel / CSV Data Source
