@@ -52,7 +52,7 @@ Ortalama Sipariş Tutarı = DIVIDE([Toplam Ciro EUR], [Toplam Sipariş], 0)
 
 * **Birim Başı Ortalama Kumaş Fiyatı (€/m):**
 ```dax
-Birim Başı Ortalama Fiyat = DIVIDE([Toplam Ciro EUR], SUM('Satış Verileri'[Miktar]), 0)
+Birim Başı Ortalama Fiyat = DIVIDE([Toplam Ciro EUR],[Toplam Miktar],0)
 ```
 
 * **Müşteri Başına Ortalama Ciro (€):**
